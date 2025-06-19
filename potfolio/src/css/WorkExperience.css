@@ -1,0 +1,199 @@
+/* Container Card */
+.Card {
+  background-color: white;
+  border-radius: 20px;
+  width: 95%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px;
+  margin-bottom: 60px;
+}
+
+/* Work Icon + Title */
+.WorkIcon {
+  width: 60px;
+  height: 60px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 80px;
+}
+
+
+/* Timeline Flex Container */
+.timeline-container {
+  display: flex;
+
+  align-items: flex-start;
+  margin-top: 50px;
+  padding: 0 20px;
+  position: relative;
+  min-width: 700px; /* ensures items don't wrap on smaller screens */
+  gap: 100px; /* spacing between items */
+  
+}
+
+/* Horizontal Line */
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #FBB7C7;
+  z-index: 0;
+}
+
+/* Individual Item (column) */
+.timeline-item {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Dashed Line Above the Dot */
+.dot::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 120px;
+  border-left: 2px dashed black;
+}
+
+/* Blue Dot */
+.dot {
+  width: 17px;
+  height: 17px;
+  background-color: #C0E9ED;
+  border-radius: 50%;
+  position: relative;
+  top: 160px;
+  transform: translateY(-600%);
+  z-index: 2;
+}
+
+/* Company Logo Above Dashed Line */
+.company-logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 8px;
+  margin-top: -120px; 
+
+}
+
+/* Text Content Below Dot */
+.work-entry {
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: center;
+  max-width: 180px;
+  transform: translateY(-75px);
+
+
+}
+
+.work-entry h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.work-entry h6 {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+
+
+/* Add horizontal scroll wrapper with proper padding */
+.timeline-scroll-wrapper {
+  overflow-x: auto;
+  overflow-y: visible; /* Changed from hidden to visible */
+  padding: 100px 20px 20px 20px; /* Top padding for logo and dot positioning */
+  margin-top: -120px; /* Offset the added top padding */
+}
+
+/* Optional: Style the scrollbar for better appearance */
+.timeline-scroll-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.timeline-scroll-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.timeline-scroll-wrapper::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.timeline-scroll-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+/* Responsive adjustments for screens smaller than 1366px */
+@media (max-width: 1125px) {
+  
+  /* Adjust dot positioning */
+  .dot {
+    top: 120px; /* Reduced from 160px */
+    transform: translateY(-300%); /* Reduced from -600% */
+  }
+  
+  /* Adjust dashed line height */
+  .dot::before {
+    height: 80px; /* Reduced from 120px */
+  }
+  
+  /* Adjust company logo positioning */
+  .company-logo {
+    margin-top: -80px; /* Reduced from -120px */
+    width: 50px; /* Slightly smaller logo */
+  }
+  
+  /* Adjust work entry positioning */
+  .work-entry {
+    margin-top: 15px; /* Reduced from 20px */
+    max-width: 160px; /* Slightly smaller width */
+  }
+  
+  /* Adjust text sizes for smaller screens */
+  .work-entry h3 {
+    font-size: 14px; /* Reduced from 16px */
+  }
+  
+  .work-entry h6 {
+    font-size: 12px; /* Reduced from 14px */
+  }
+  
+  /* Adjust timeline container gap */
+  .timeline-container {
+    gap: 80px; /* Reduced from 100px */
+    min-width: 600px; /* Reduced from 700px */
+  }
+  
+  /* Adjust scroll wrapper padding */
+  .timeline-scroll-wrapper {
+    padding: 100px 20px 20px 20px; /* Reduced top padding from 140px */
+    margin-top: -80px; /* Adjusted to match reduced padding */
+  }
+}
+
+/* Specific adjustments for screens between 1360px and 1100px */
+@media (min-width: 1100px) and (max-width: 1360px) {
+  .dot {
+    top: 120px;
+    transform: translateY(-300%);
+  }
+}
