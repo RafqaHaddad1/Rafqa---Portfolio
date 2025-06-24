@@ -1,12 +1,12 @@
 import '../css/WorkExperience.css';
 import workicon from '../assets/Icons/WorkIcon.png';
-import UDlogo from '../assets/UDLogo.png';
+import UDlogo2 from '../assets/UDLogo.png';
 import NovaLogo from '../assets/NovaLogo.png';
 
 function WorkExperience() {
   const AllWork = [
-    { id: 4, company: "Unite Digital", role: "Software Engineer", dateRange: "July 2025 - Present", logo: UDlogo },
-    { id: 3, company: "Unite Digital", role: "Technical Production Support", dateRange: "February 2025 - July 2025", logo: UDlogo },
+    { id: 4, company: "Unite Digital", role: "Software Engineer", dateRange: "July 2025 - Present", logo: UDlogo2 },
+    { id: 3, company: "Unite Digital", role: "Technical Production Support", dateRange: "February 2025 - July 2025", logo: UDlogo2 },
     { id: 2, company: "Nova4", role: "Web Developer", dateRange: "September 2024 - June 2025", logo: NovaLogo },
     { id: 1, company: "Nova4", role: "Software Engineer Intern", dateRange: "May 2024 - September 2024", logo: NovaLogo }
   ];
@@ -29,7 +29,7 @@ function WorkExperience() {
                           <div className="work-entry">
                               <img src={work.logo} alt={`${work.company} logo`} className="company-logo" />
                               <h3>{work.role}</h3>
-                              <h6>{work.dateRange}</h6>
+                              <p>{work.dateRange}</p>
                           </div>
                         </div>
                     ))}

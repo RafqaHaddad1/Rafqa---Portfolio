@@ -1,0 +1,64 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 10px;
+   align-items: stretch;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #FFFFFF;
+  border: 4px solid #D7ABE3;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  height: 80%;
+
+}
+
+
+.project-image{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.learnmore {
+  display: flex;
+  align-items: center;       
+  justify-content: center; 
+  gap: 8px;           
+  cursor: pointer;     
+  background-color: #AFE1FB;
+  width: 50%;
+  border-radius: 50px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: auto; /* PUSH TO BOTTOM */
+}
+
+.learnmore p {
+  margin: 0;          
+  color: #4864B0;
+  font-weight: bold;
+
+}
+
+.learnmore img {
+  width: 16px;         
+  height: auto;
+}
+.project-category {
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+
+.project-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,85 @@
+.half-card{
+  background-color: white;
+  border-radius: 20px;
+  width: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px 40px;
+  margin-bottom: 20px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Optional: space between cards */
+    
+}
+.halfIcon{
+    width: 70px
+}
+.title2 {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: -25px;
+}
+
+.education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ flex-direction: column;
+}
+
+.imagelogo {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.degree-intro {
+  font-size: 16px;
+  color: #000;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.degree-major {
+  font-size: 24px;
+  font-weight: bold;
+  color: #006D5B; 
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.degree-dates {
+  font-size: 14px;
+  color: #999999;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.certificate-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #C80F2E; 
+  margin: 0;
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+
+.certificate-dates {
+  font-size: 14px;
+  color: #999999;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.Certificateimagelogo{
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin-top: 40px;
+}

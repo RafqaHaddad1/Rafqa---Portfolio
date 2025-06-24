@@ -1,0 +1,23 @@
+.introHalf{
+  width: 50%;
+  margin-bottom: 20px;
+}
+.introSection{
+    display: flex;
+    justify-content: space-between;
+  
+}
+.introImage{
+    width: 350px;
+    height: auto;
+    float: inline-end;
+}
+.introTitle{
+    color:#FF866E ;
+    font-size: 60px;
+}
+.introParag{
+    font-size: 25px;
+    width: 140%;
+    display: block;
+}

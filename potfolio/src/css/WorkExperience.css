@@ -5,7 +5,7 @@
   width: 95%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 30px 40px;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 /* Work Icon + Title */
@@ -20,14 +20,13 @@
   gap: 25px;
   font-weight: bold;
   font-size: 25px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 
 /* Timeline Flex Container */
 .timeline-container {
   display: flex;
-
   align-items: flex-start;
   margin-top: 50px;
   padding: 0 20px;
@@ -66,7 +65,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
-  height: 120px;
+  height: 135px;
   border-left: 2px dashed black;
 }
 
@@ -77,17 +76,17 @@
   background-color: #C0E9ED;
   border-radius: 50%;
   position: relative;
-  top: 160px;
+  top: 170px;
   transform: translateY(-600%);
   z-index: 2;
 }
 
 /* Company Logo Above Dashed Line */
 .company-logo {
-  width: 60px;
+  width: 90px;
   height: auto;
   margin-bottom: 8px;
-  margin-top: -120px; 
+  margin-top: -70px; 
 
 }
 
@@ -95,7 +94,7 @@
 .work-entry {
   margin-top: 20px;
   margin-left: 20px;
-  text-align: center;
+  text-align: start ;
   max-width: 180px;
   transform: translateY(-75px);
 
@@ -121,7 +120,7 @@
   overflow-x: auto;
   overflow-y: visible; /* Changed from hidden to visible */
   padding: 100px 20px 20px 20px; /* Top padding for logo and dot positioning */
-  margin-top: -120px; /* Offset the added top padding */
+  margin-top: -90px; /* Offset the added top padding */
 }
 
 /* Optional: Style the scrollbar for better appearance */
