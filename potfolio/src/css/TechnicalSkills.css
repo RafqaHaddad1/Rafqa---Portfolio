@@ -7,7 +7,7 @@
 
 .skill-card {
   background-color: #FFFFFF;
-  border: 1px solid #ddd;
+  border: 3px solid #D7ABE3;
   border-radius: 8px;
   padding: 16px;
   text-align: center;
@@ -25,3 +25,39 @@
   object-fit: contain;
   margin-bottom: 8px;
 }
+.FilterDiv ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 12px; /* Space between items */
+  padding: 0;
+  margin: 0;
+}
+
+.FilterDiv li {
+  padding: 8px 20px;
+  border: 3px solid #FF866E; /* Customize color */
+  border-radius: 50px; /* Makes it oval */
+  background-color: #f5f5f5;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.FilterDiv li:hover {
+  background-color: #D7ABE3;
+  color: white;
+}
+.FilterDiv {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.FilterDiv ul li.active {
+    font-weight: bold;
+
+}
+

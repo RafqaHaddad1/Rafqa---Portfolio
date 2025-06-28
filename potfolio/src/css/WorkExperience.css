@@ -20,7 +20,7 @@
   gap: 25px;
   font-weight: bold;
   font-size: 25px;
-  margin-bottom: 50px;
+
 }
 
 
@@ -28,7 +28,6 @@
 .timeline-container {
   display: flex;
   align-items: flex-start;
-  margin-top: 50px;
   padding: 0 20px;
   position: relative;
   min-width: 700px; /* ensures items don't wrap on smaller screens */
@@ -120,7 +119,7 @@
   overflow-x: auto;
   overflow-y: visible; /* Changed from hidden to visible */
   padding: 100px 20px 20px 20px; /* Top padding for logo and dot positioning */
-  margin-top: -90px; /* Offset the added top padding */
+  
 }
 
 /* Optional: Style the scrollbar for better appearance */

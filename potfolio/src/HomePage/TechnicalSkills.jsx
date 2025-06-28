@@ -35,6 +35,7 @@ import SQLServer from '../assets/TechnicalIcons/SQLserver.png'
 import swagger from '../assets/TechnicalIcons/swagger.png'
 import vite from '../assets/TechnicalIcons/vite.png'
 import webapi from '../assets/TechnicalIcons/webApi.png'
+import { useState } from 'react';
 
 
 function TechnicalSkills(){
@@ -71,7 +72,24 @@ function TechnicalSkills(){
         {id: 30, name: "Swagger", image:swagger},
         {id: 31, name: ".NET Web API", image: webapi},
         {id: 32, name: "Agile / Scrum", image: agile},
-    ]
+    ];
+
+    const categories = {
+    "Languages": ["Java", "python", "C", "C#", "JavaScript", "PHP", "SQL"],
+    "Front-End": ["HTML", "CSS", "JavaScript", "ReactJS", "Flutter", "React Vite"],
+    "Back-End": ["ASP .NET Core", ".NET Web API", "Flask", "Rest Api", "Microsoft SQL Server", "MySQL"],
+    "AI / ML": ["Reinforcement Learning", "MonteCarlo Simulation"],
+    "Dev Tools": ["Git", "Postman", "Swagger"],
+    "Architecture": ["Object Oriented Programming", "MVC Architecture", "Design Patterns", "MVVM Architecture"],
+    "Mobile": ["Flutter", "Kotlin MultiPlatform"],
+    "Project Management": ["Agile / Scrum"],
+    "High Performance": ["NVIDIA CUDA", "OpenMP", "MPI"]
+    };
+    const [selectedCategory, setSelectedCategory] = useState(null);
+    const filteredSkills = selectedCategory
+    ? allSkills.filter(skill => categories[selectedCategory]?.includes(skill.name))
+    : allSkills;
+
     return (
     <>
         <div className="Card">
@@ -79,9 +97,27 @@ function TechnicalSkills(){
             <img src={pencilicon} className="WorkIcon" alt="skills icon" />
             <h2>Technical Skills</h2>
         </div>
+        <div className='FilterDiv'>
+           <ul>
+             <li onClick={() => setSelectedCategory(null)} style={{ cursor: 'pointer', color: 'gray' }}>
+                Show All
+            </li>
+            {Object.keys(categories).map((category, index) => (
+                <li 
+                    key={index}
+                    onClick={() => setSelectedCategory(category)}
+                    className={selectedCategory === category ? 'active' : ''}
+                    style={{ cursor: 'pointer' }}
+                >
+                    {category}
+                </li>
+            ))}
+           
+        </ul>
 
+        </div>
         <div className="skills-grid">
-            {allSkills.map((skill, index) => (
+            {filteredSkills.map((skill, index) => (
             <div key={index} className="skill-card">
                 <img src={skill.image} alt={`${skill.name} logo`} className="logo" />
                 <p>{skill.name}</p>

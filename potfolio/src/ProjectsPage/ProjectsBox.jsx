@@ -9,6 +9,7 @@ import proxy from "../assets/ProjectsIcons/proxy.png"
 import gym from "../assets/ProjectsIcons/gym.avif"
 import mate from "../assets/ProjectsIcons/motimate.jpg"
 import parkit from "../assets/ProjectsIcons/parkit.jpg"
+import portfolio from "../assets/ProjectsIcons/portfolio.jpg"
 function ProjectsBox(){
     const projectList = [
         {id: 1, name: "Monopoly Game: Learning-based Monte Carlo Simulation (Parallel Algorithm)", category:"High performance, AI, ML", image: Monopoly },
@@ -19,7 +20,8 @@ function ProjectsBox(){
         {id: 6, name: "Reverse Engineering of Malware", category: "Computer Security" , image:malware},
         {id: 7, name: "Proxy Server Project", category : "Networks", image: proxy },
         {id: 8, name: "My gym Diary ", category: "Web development", image:gym},
-        {id: 9, name: "Moti-Mate", category: "Flutter Mobile Development", image: mate}
+        {id: 9, name: "Moti-Mate", category: "Flutter Mobile Development", image: mate},
+        {id: 10, name: 'Portfolio', category:"Web Development",image: portfolio}
     ]
     return(
         <>
